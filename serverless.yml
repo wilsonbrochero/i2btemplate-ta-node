@@ -1,0 +1,19 @@
+service: i2btemplate-ta-node
+
+custom:
+  serverless-offline:
+    port: 30000
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:  
+  login:
+    handler: src/api-client/rest/app.authentication
+    events:      
+      - http:
+          path: authentication                         
+          method: POST  
+plugins:
+  - serverless-offline

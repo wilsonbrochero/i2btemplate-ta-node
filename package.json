@@ -1,0 +1,29 @@
+{
+  "name": "i2btemplate-ta-node",
+  "version": "1.0.0",
+  "description": "I2B Trinity Architecture NodeJs Guide() {",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "node src/api-client/rest/app.js",
+    "start": "node src/api-client/rest/app.js",
+    "deploy": "sls deploy -v",
+    "undeploy": "sls remove" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsonbrochero/i2btemplate-ta-node.git"
+  },
+  "keywords": [
+    "i2b",
+    "trinity",
+    "nodejs"
+  ],
+  "author": "I2B TECHNOLOGIES",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilsonbrochero/i2btemplate-ta-node/issues"
+  },
+  "homepage": "https://github.com/wilsonbrochero/i2btemplate-ta-node#readme"
+}
+
